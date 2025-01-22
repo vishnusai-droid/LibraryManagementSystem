@@ -10,6 +10,7 @@ Remove a book by ISBN: Books can be removed from the library using their ISBN.
 Search for books by title: Users can search for books by their title.
 List all available books: The system can display all books currently available in the library.
 Display download size for eBooks: For eBooks, the download size (in MB) is shown.
+
 SOLID Principles Applied
 Single Responsibility Principle (SRP):
 The LibraryManager class has only one responsibility, which is to manage the library’s operations. Other functionalities like book creation and listing are handled by separate classes.
@@ -21,31 +22,13 @@ Interface Segregation Principle (ISP):
 The system uses specific interfaces for operations related to books, avoiding unnecessary methods in unrelated classes.
 Dependency Inversion Principle (DIP):
 The system relies on abstractions (interfaces) instead of concrete implementations, ensuring flexibility and easier testing.
+
 Design Patterns Applied
 Singleton Pattern:
 The LibraryManager class ensures that only one instance of the library manager exists throughout the application.
 Factory Pattern:
 The BookFactory class dynamically creates instances of Book or EBook based on input parameters, simplifying the creation process.
-How to Run the Program
-Download or clone the project files from GitHub.
-Open the solution in Visual Studio.
-Build the solution:
-bash
-Copy
-Edit
-dotnet build
-Run the project:
-bash
-Copy
-Edit
-dotnet run
-A console-based menu will appear, allowing you to interact with the library system.
-Menu Options:
-Add a book or eBook.
-Search for a book by title.
-Remove a book by ISBN.
-List all available books.
-Key Enhancements in Each Part
+
 Part 1: Basic Library Management System
 Created the Book class with attributes like title, author, ISBN, and availability status.
 Implemented the Library class to manage a list of books with methods to add, remove, search, and list books.
